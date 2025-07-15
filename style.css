@@ -63,7 +63,6 @@ main {
     flex-direction: column;
     background-color: #FFFFFF;
 }
-
 .content-wrapper-1, .content-wrapper-2, .content-wrapper-3, .content-wrapper-4 {
     display: flex;
     flex-direction: column;
@@ -74,7 +73,7 @@ main {
     margin: 0 auto;
     box-sizing: border-box;
 }
-.content-wrapper-2, .content-wrapper-4 {
+.content-wrapper-4 {
     background-color: #F6F6F6;
 }
 .content-1 h1, .content-2 h1, .content-3 h1, .content-4 h1 {
@@ -147,6 +146,37 @@ footer {
 }
 @media (min-width: 1024px) {
     header {
+        height: 40%;
         background-image: url(./assets/img/desktop-header-bg.png);
+    }
+    .content-wrapper-1, .content-wrapper-2, .content-wrapper-3 {
+        display: flex;
+        flex-direction: row;
+        width: 40%;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .content-wrapper-2 {
+        flex-direction: row-reverse;
+    }
+    .content-text-1, .content-text-2, .content-text-3 {
+        max-width: 500px;
+        min-width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .content-2 {
+        width: 100%;
+        background-color: #F6F6F6;
+        
+    }
+    .content-1 img, .content-2 img, .content-3 img {
+        width: 80%;
+        max-width: 420px;
+        height: auto;
+        display: flex;
+        margin: 0 auto;
     }
 }
