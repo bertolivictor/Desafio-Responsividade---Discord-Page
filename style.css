@@ -58,20 +58,95 @@ header button {
 .win-download-button {
     color: #23272A;
 }
+main {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+}
+
+.content-wrapper-1, .content-wrapper-2, .content-wrapper-3, .content-wrapper-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 40px 20px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.content-wrapper-2, .content-wrapper-4 {
+    background-color: #F6F6F6;
+}
+.content-1 h1, .content-2 h1, .content-3 h1, .content-4 h1 {
+    font-size: 2em;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.content-4 h1 {
+    font-family: "Luckiest guy", cursive;
+}
+.content-text-1, .content-text-2, .content-text-3, .content-text-4 {
+    width: 90%;
+    max-width: 450px;
+    margin: 0 auto;
+}
+.content-1 img, .content-2 img, .content-3 img, .content-4 img {
+    width: 80%;
+    max-width: 420px;
+    height: auto;
+    margin: 0 auto;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: scale-down;
+    background-color: #23272A;
+    max-height: 450px;
+    height: 15%;
+
+}
 @media (min-width: 600px) {
     .header-text {
-    max-width: 60%;
+    max-width: 620px;
+    width: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
     margin: 0 auto;
     box-sizing: border-box;
-
+    }
+    .header-text h1 {
+        font-family: "Luckiest Guy", cursive;
+        font-size: 2em;
+        text-align: center;
+    }
+    .header-text p {
+        text-align: center;
+    }
+    .content-text-4 {
+        text-align: center;
+    }
 }
-.header-text h1 {
-    font-family: "Luckiest Guy", cursive;
-    font-size: 2em;
-    text-align: center;
+@media (min-width: 720px) {
+    header {
+        background-image: url(./assets/img/header-bg.png);
+    }
+    .header-buttons {
+    max-width: 620px;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    }
 }
+@media (min-width: 1024px) {
+    header {
+        background-image: url(./assets/img/desktop-header-bg.png);
+    }
 }
