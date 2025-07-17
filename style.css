@@ -36,6 +36,8 @@ header {
 .header-buttons {
     display: flex;
     flex-direction: column;
+    justify-self: center;
+    align-items: center;
     width: 300px;
     margin: 0 auto;
     gap: 10px;
@@ -47,6 +49,8 @@ header button {
     border-radius: 50px;
     display: flex;
     flex-direction: column;
+    justify-self: center;
+    align-items: center;
     width: 300px;
     margin: 0 auto;
     gap: 10px;
@@ -146,7 +150,7 @@ footer {
 }
 @media (min-width: 1024px) {
     header {
-        height: 40%;
+        height: 30%;
         background-image: url(./assets/img/desktop-header-bg.png);
     }
     .content-wrapper-1, .content-wrapper-2, .content-wrapper-3 {
